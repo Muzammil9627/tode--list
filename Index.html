@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>ToDo List</h1>
+        <div class="inputs">
+            <input type="text" placeholder="Enter Your Text" id="inp">
+            <button onclick=" submit()">Add</button>
+        </div>
+        <ul id="listdetail"></ul>
+    </div>
+    <script>
+        // let inputs2=document.getElementById("inp")
+        // let listcontainer=document.getElementById("listdetail");
+        // function submit(){
+        //     if(inputs2.value == ""){
+        //         alert("You Must Write Somethings!");}
+        //             else{let li=document.createElement ("li")
+        //             li .innerHTML = inputs2.value;
+        //             listcontainer.appendchild(li);
+        //             let span = document.createElement("span")
+        //             span.innerHTML="\u00d7";
+        //             li.appendChild(span)
+                    
+        //         }
+        //     }
+        let inputs2=document.getElementById("inp");
+        let listcontainer=document.getElementById("listdetail");
+        function submit(){
+           if(inputs2.value == ""){
+            alert("You must write something!");
+           }else{
+            let li =document.createElement("li");
+            li .innerHTML = inputs2.value;
+            listcontainer.appendChild(li);
+            let span = document.createElement("span")
+            span.innerHTML="\u00d7";
+            li.appendChild(span)
+           }
+        }
+    </script>
+</body>
+</html>
